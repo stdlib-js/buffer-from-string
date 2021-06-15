@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/buffer-from-string",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Allocate a buffer containing a provided string.",
   "license": "Apache-2.0",
   "author": {
