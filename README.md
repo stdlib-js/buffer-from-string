@@ -132,6 +132,23 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/buffer/ctor`][@stdlib/buffer/ctor]: buffer.
+-   [`@stdlib/buffer/from-array`][@stdlib/buffer/from-array]: allocate a buffer using an octet array.
+-   [`@stdlib/buffer/from-arraybuffer`][@stdlib/buffer/from-arraybuffer]: allocate a buffer from an ArrayBuffer.
+-   [`@stdlib/buffer/from-buffer`][@stdlib/buffer/from-buffer]: copy buffer data to a new Buffer instance.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -189,7 +206,17 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/buffer-from-string/main/LICENSE
 
+<!-- <related-links> -->
+
 [@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
+
+[@stdlib/buffer/from-array]: https://github.com/stdlib-js/buffer-from-array
+
+[@stdlib/buffer/from-arraybuffer]: https://github.com/stdlib-js/buffer-from-arraybuffer
+
+[@stdlib/buffer/from-buffer]: https://github.com/stdlib-js/buffer-from-buffer
+
+<!-- </related-links> -->
 
 </section>
 
