@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/buffer-from-string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-string2buffer = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var string2buffer = require( 'path/to/vendor/umd/buffer-from-string/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.string2buffer;
-})();
-</script>
+var string2buffer = require( '@stdlib/buffer-from-string' );
 ```
 
 #### string2buffer( str\[, encoding] )
@@ -113,15 +105,10 @@ The following `encodings` are supported:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var randint = require( '@stdlib/random-base-discrete-uniform' );
+var string2buffer = require( '@stdlib/buffer-from-string' );
 
 // Create a buffer from a string:
 var buf = string2buffer( 'beep boop bop' );
@@ -139,11 +126,6 @@ for ( i = 0; i < 100; i++ ) {
     }
     console.log( buf.toString() );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -166,10 +148,10 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/buffer/ctor`][@stdlib/buffer/ctor]</span><span class="delimiter">: </span><span class="description">Buffer.</span>
--   <span class="package-name">[`@stdlib/buffer/from-array`][@stdlib/buffer/from-array]</span><span class="delimiter">: </span><span class="description">allocate a buffer using an octet array.</span>
--   <span class="package-name">[`@stdlib/buffer/from-arraybuffer`][@stdlib/buffer/from-arraybuffer]</span><span class="delimiter">: </span><span class="description">allocate a buffer from an ArrayBuffer.</span>
--   <span class="package-name">[`@stdlib/buffer/from-buffer`][@stdlib/buffer/from-buffer]</span><span class="delimiter">: </span><span class="description">copy buffer data to a new Buffer instance.</span>
+-   <span class="package-name">[`@stdlib/buffer-ctor`][@stdlib/buffer/ctor]</span><span class="delimiter">: </span><span class="description">Buffer.</span>
+-   <span class="package-name">[`@stdlib/buffer-from-array`][@stdlib/buffer/from-array]</span><span class="delimiter">: </span><span class="description">allocate a buffer using an octet array.</span>
+-   <span class="package-name">[`@stdlib/buffer-from-arraybuffer`][@stdlib/buffer/from-arraybuffer]</span><span class="delimiter">: </span><span class="description">allocate a buffer from an ArrayBuffer.</span>
+-   <span class="package-name">[`@stdlib/buffer-from-buffer`][@stdlib/buffer/from-buffer]</span><span class="delimiter">: </span><span class="description">copy buffer data to a new Buffer instance.</span>
 
 </section>
 
@@ -246,13 +228,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor/tree/umd
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
-[@stdlib/buffer/from-array]: https://github.com/stdlib-js/buffer-from-array/tree/umd
+[@stdlib/buffer/from-array]: https://github.com/stdlib-js/buffer-from-array
 
-[@stdlib/buffer/from-arraybuffer]: https://github.com/stdlib-js/buffer-from-arraybuffer/tree/umd
+[@stdlib/buffer/from-arraybuffer]: https://github.com/stdlib-js/buffer-from-arraybuffer
 
-[@stdlib/buffer/from-buffer]: https://github.com/stdlib-js/buffer-from-buffer/tree/umd
+[@stdlib/buffer/from-buffer]: https://github.com/stdlib-js/buffer-from-buffer
 
 <!-- </related-links> -->
 
