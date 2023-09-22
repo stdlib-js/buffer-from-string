@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@deno/mod.js';
+import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@v0.1.0-deno/mod.js';
 ```
 
 #### string2buffer( str\[, encoding] )
@@ -103,7 +103,7 @@ The following `encodings` are supported:
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import randint from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@deno/mod.js';
+import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@v0.1.0-deno/mod.js';
 
 // Create a buffer from a string:
 var buf = string2buffer( 'beep boop bop' );
