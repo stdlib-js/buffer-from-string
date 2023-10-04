@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@esm/index.mjs';
+import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@v0.1.1-esm/index.mjs';
 ```
 
 #### string2buffer( str\[, encoding] )
@@ -108,7 +108,7 @@ The following `encodings` are supported:
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import randint from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@esm/index.mjs';
+import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@v0.1.1-esm/index.mjs';
 
 // Create a buffer from a string:
 var buf = string2buffer( 'beep boop bop' );
