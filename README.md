@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/buffer-from-string/tags). For example,
+
+```javascript
 import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@v0.1.1-deno/mod.js';
 ```
 
@@ -103,7 +108,7 @@ The following `encodings` are supported:
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import randint from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@v0.1.1-deno/mod.js';
+import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@deno/mod.js';
 
 // Create a buffer from a string:
 var buf = string2buffer( 'beep boop bop' );
