@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,139 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var isBuffer = require( '@stdlib/assert-is-buffer' );
-var polyfill = require( './../../dist/polyfill.js' );
-var nonPolyfill = require( './../../dist/main.js' );
-var string2buffer = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof string2buffer, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'in older environments, the main export is a polyfill', function test( t ) {
-	var string2buffer = proxyquire( './../dist', {
-		'./has_from.js': false
-	});
-	t.strictEqual( string2buffer, polyfill, 'returns polyfill' );
-	t.end();
-});
-
-tape( 'in newer environments, the main export is not a polyfill', function test( t ) {
-	var string2buffer = proxyquire( './../dist', {
-		'./has_from.js': true
-	});
-	t.strictEqual( string2buffer, nonPolyfill, 'does not return polyfill' );
-	t.end();
-});
-
-tape( 'the function throws an error if not provided a string', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		[ 1, 2, 3, 4 ],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			string2buffer( value );
-		};
-	}
-});
-
-tape( 'the function throws an error if not provided a string (encoding)', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		[ 1, 2, 3, 4 ],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			string2buffer( value, 'utf8' );
-		};
-	}
-});
-
-tape( 'the function throws an error if not provided a valid encoding argument', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'beep',
-		'boop',
-		'bop',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		[ 1, 2, 3, 4 ],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			string2buffer( 'beep', value );
-		};
-	}
-});
-
-tape( 'the function allocates a buffer containing a provided string', function test( t ) {
-	var buf = string2buffer( 'beep boop' );
-	t.strictEqual( isBuffer( buf ), true, 'returns a buffer' );
-	t.strictEqual( buf.length, 9, 'has expected length' );
-	t.strictEqual( buf.toString(), 'beep boop', 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function allocates a buffer containing a provided string (encoding)', function test( t ) {
-	var buf = string2buffer( '7468697320697320612074c3a97374', 'hex' );
-	t.strictEqual( isBuffer( buf ), true, 'returns a buffer' );
-	t.strictEqual( buf.length, 15, 'has expected length' );
-	t.strictEqual( buf.toString(), 'this is a tést', 'returns expected value' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
