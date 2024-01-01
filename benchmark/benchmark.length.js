@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var pow = require( '@stdlib/math-base-special-pow' );
 var isBuffer = require( '@stdlib/assert-is-buffer' );
 var pkg = require( './../package.json' ).name;
