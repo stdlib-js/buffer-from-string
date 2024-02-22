@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-string2buffer = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@umd/browser.js' )
+string2buffer = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var string2buffer = require( 'path/to/vendor/umd/buffer-from-string/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -130,7 +130,7 @@ The following `encodings` are supported:
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
