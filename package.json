@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/buffer-from-string",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Allocate a buffer containing a provided string.",
   "license": "Apache-2.0",
   "author": {
@@ -37,14 +37,14 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-function": "^0.2.1",
-    "@stdlib/assert-is-string": "^0.2.1",
+    "@stdlib/assert-is-function": "^0.2.2",
+    "@stdlib/assert-is-string": "^0.2.2",
     "@stdlib/buffer-ctor": "^0.2.1",
-    "@stdlib/string-format": "^0.2.1",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
+    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-buffer": "^0.2.1",
+    "@stdlib/assert-is-buffer": "^0.2.2",
     "@stdlib/math-base-special-pow": "^0.2.1",
     "@stdlib/random-base-discrete-uniform": "^0.2.1",
     "@stdlib/random-base-randu": "^0.2.1",
