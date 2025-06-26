@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-04)
+## Unreleased (2025-06-26)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`46ff8ea`](https://github.com/stdlib-js/stdlib/commit/46ff8ea7761ae438c4718681c5890f146fb0985e) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`8af1610`](https://github.com/stdlib-js/stdlib/commit/8af16104077b365569644d710180017cc34bc584) - **chore(buffer):** remove unused `eslint-disable` directives in `polyfill.js` [(#5762)](https://github.com/stdlib-js/stdlib/pull/5762) _(by Abdelrahman Samir)_
 
 </details>
@@ -36,9 +37,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Abdelrahman Samir
+-   Philipp Burckhardt
 
 </section>
 
