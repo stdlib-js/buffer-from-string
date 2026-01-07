@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-30)
+## Unreleased (2026-01-07)
 
 <section class="issues">
 
@@ -24,6 +24,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`01e7efb`](https://github.com/stdlib-js/stdlib/commit/01e7efb049f30e3903d29a05b145966a9b75d909) - **bench:** refactor to use string interpolation in `buffer/from-string` [(#9579)](https://github.com/stdlib-js/stdlib/pull/9579) _(by Vishal Gaikwad)_
+-   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`46ff8ea`](https://github.com/stdlib-js/stdlib/commit/46ff8ea7761ae438c4718681c5890f146fb0985e) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`8af1610`](https://github.com/stdlib-js/stdlib/commit/8af16104077b365569644d710180017cc34bc584) - **chore(buffer):** remove unused `eslint-disable` directives in `polyfill.js` [(#5762)](https://github.com/stdlib-js/stdlib/pull/5762) _(by Abdelrahman Samir)_
 
@@ -37,10 +39,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Abdelrahman Samir
 -   Philipp Burckhardt
+-   Vishal Gaikwad
 
 </section>
 
